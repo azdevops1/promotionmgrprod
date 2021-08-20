@@ -18,6 +18,10 @@ inputs:
 - AWS_INSTANCE_TYPE: m5.large
 - RELEASE_NUMBER: none
 - API_BUILD_NUMBER: none
+- NETWORK_ID: vpc-06eb5e4250bfe0d27
+- MNG_SUBNET_ID: subnet-02313a48c8a4179ec
+- APP_SUBNET_ID1: subnet-060a35010313aba6d
+- APP_SUBNET_ID2: subnet-0b48dd4080dfa623e
 
 applications:
   - promotions-manager-ui:

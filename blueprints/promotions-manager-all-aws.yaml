@@ -44,4 +44,18 @@ applications:
       #target: vm1
       input_values:
         - AWS_INSTANCE_TYPE: $AWS_INSTANCE_TYPE
+
+infrastructure:
+  connectivity:
+    green_host: green.pm.com
+    virtual_network:
+      id: $NETWORK_ID
+      subnets:
+        management:
+          - $MNG_SUBNET_ID
+        application:
+          - $APP_SUBNET_ID1
+          - $APP_SUBNET_ID2
+
+
               
